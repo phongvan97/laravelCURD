@@ -52,8 +52,11 @@ Route::post('/product/store','ProductController@store');
 Route::post('/product/update/{id}','ProductController@update');
 //Thao Tac Xoa
 Route::post('/product/destroy/{id}','ProductController@destroy');
+Route::post('/product/AddCart/{id}','ProductController@AddCart');
+Route::get('/product/DeleteCart/{id}','ProductController@DeleteCart');
 
 
 
 Route::get('/comment/{id}','CommentController@index');
 Route::post('/comment/{id}/post','CommentController@post');
+
